@@ -1,22 +1,56 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
 
 body {
     background-color: #f6f8fc;
+    line-height: normal;
 }
 
 .content {
+    display: inline-flex;
+    justify-content: space-around;
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+}
+
+#details-container {
+    background-color: #d7d7d7a2;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px #00000025 ;
+    display: flex;
+    flex-direction: column;
+    max-height: 560px;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 30%; 
+}
+
+.pokemons-container {
+    width: 70%;
+}
+
+#title img {
+    margin: 0.3rem;
+    width: auto;
+}
+
+#title {
+    background-color: #c30000;
+    border-bottom: 5px solid #000;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    
+    width: 100%;
 }
 
 @media screen and (min-width: 992px) {
     .content {
-        max-width: 992px;
         height: auto;
         margin: 1rem auto;
         border-radius: 1rem;

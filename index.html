@@ -23,19 +23,58 @@
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
-
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
-
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
-    </section>
+    <header id="title">
+      <img src="./International_Pokémon_logo.png" alt="logo"/>
+    </header>
+    <main class="content">
+        <section id="pokemons-container">
+            <ol id="pokemonList" class="pokemons">
+                <!-- ..... Pokemons here ..... -->
+            </ol>
+    
+            <div class="pagination">
+                <button id="loadMoreButton" type="button">
+                    Load More
+                </button>
+            </div>
+        </section>
+        <aside id="details-container">
+            <div id="details-header">
+                <span id="details-number">#0</span>          
+                <img id="details-image">
+                <h2 id="details-name">Nome</h2>
+            </div>
+            <ol id="details-types">
+            </ol>
+            <div id="stats-container">
+                <div id="stats-hp" class="stats-item">
+                    <span class="stats-name">Hp</span>
+                    <span id="hp-value" class="value">0</span>
+                </div>
+                <div id="stats-attack" class="stats-item">
+                    <span class="stats-name">Ataque</span>
+                    <span id="attack-value" class="value">0</span>
+                </div>
+                <div id="stats-defense" class="stats-item">
+                    <span class="stats-name">Defesa</span>
+                    <span id="defense-value" class="value">0</span>
+                </div>
+                <div id="stats-spAttack" class="stats-item">
+                    <span class="stats-name">Ataque Especial</span>
+                    <span id="spAttack-value" class="value">0</span>
+                </div>
+                <div id="stats-spDefense" class="stats-item">
+                    <span class="stats-name">Defesa Especial</span>
+                    <span id="spDefense-value" class="value">0</span>
+                </div>
+                <div id="stats-speed" class="stats-item">
+                    <span class="stats-name">Velocidade</span>
+                    <span id="speed-value" class="value">0</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+    
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
